@@ -1,0 +1,215 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible" 
+    
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView 
+        android:id="@+id/phoneNumberText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/minUsedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:text="@string/minutesUsed"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/minUsedText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <ProgressBar
+            android:progressDrawable="@drawable/progress_bar"
+            android:id="@+id/minUsedProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:maxHeight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+    </LinearLayout>
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/newMonthStartsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:text="@string/newMonthStarts"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/newMonthStartsText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    <ProgressBar
+	        android:progressDrawable="@drawable/progress_bar"
+	        android:id="@+id/newMonthProgressBar"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:maxHeight="4dp"
+	        android:layout_width="match_parent"
+	        android:layout_height="5dp" />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/dataUsedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:text="@string/dataUsed"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/dataUsedText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/balanceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:text="@string/currentBalance"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/balanceText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/chargeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:text="@string/chargeAmount"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/chargeText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lastUpdateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:text="@string/lastUpdate"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/lastUpdateText"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.67"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/refreshingText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Checking Your Minutes..."
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/red"
+            android:typeface="sans"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

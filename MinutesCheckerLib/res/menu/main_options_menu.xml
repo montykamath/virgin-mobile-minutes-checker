@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/mainMenuItemAddAccountId" 
+        android:title="@string/addAccount" 
+        android:icon="@drawable/ic_menu_add" />
+    <item 
+        android:id="@+id/mainMenuItemRefreshAllId" 
+        android:title="@string/refreshAll" 
+        android:icon="@drawable/ic_menu_refresh" />
+    <item
+        android:id="@+id/mainMenuItemSettingsId"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_menu_preferences" />
+    <item
+        android:id="@+id/mainMenuItemRateThisApp"
+        android:title="@string/rateThisApp"
+        android:icon="@drawable/ic_menu_agenda" />
+    <item
+        android:id="@+id/mainMenuItemAboutId"
+        android:title="@string/about"
+        android:icon="@drawable/ic_menu_info_details" />
+
+</menu>

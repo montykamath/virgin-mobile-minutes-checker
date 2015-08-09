@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">Minutes Checker Free</string>
+    <string name="app_version_free_or_paid">free</string>
+    <string name="app_market_url">market://details?id=com.goodstart.minutescheckerfree</string>
+
+</resources>

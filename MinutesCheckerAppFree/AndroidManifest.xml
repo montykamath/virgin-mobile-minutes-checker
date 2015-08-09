@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.goodstart.minutescheckerfree"
+    android:versionCode="17"
+    android:versionName="17"
+    android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.goodstart.minutescheckerlib.GsMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+        	android:name="com.google.ads.AdActivity" 
+   			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+   
+        <activity
+            android:name="com.goodstart.minutescheckerlib.GsPreferencesActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <receiver android:name="com.goodstart.minutescheckerlib.GsPhoneEventReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver 		
+			android:label="Minutes Checker 2x1" 
+			android:icon="@drawable/ic_launcher" 
+			android:name="com.goodstart.minutescheckerlib.GsWidgetProvider2x1">
+				<intent-filter>
+					<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+					<action android:name="GsWidgetProvider2x1_UPDATE" />
+     			</intent-filter>
+     			<meta-data 
+     				android:name="android.appwidget.provider"
+					android:resource="@xml/widget_2x1_provider" />
+		</receiver>
+		
+		<receiver
+			android:label="Minutes Checker 1x1" 
+			android:icon="@drawable/ic_launcher" 
+			android:name="com.goodstart.minutescheckerlib.GsWidgetProvider1x1">
+				<intent-filter>
+					<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+					<action android:name="GsWidgetProvider1x1_UPDATE" />
+     			</intent-filter>
+     			<meta-data 
+     				android:name="android.appwidget.provider"
+					android:resource="@xml/widget_1x1_provider" />
+		</receiver>
+		
+		<receiver
+			android:label="Minutes Checker 1x1 PieChart" 
+			android:icon="@drawable/ic_launcher" 
+			android:name="com.goodstart.minutescheckerlib.GsWidgetProvider1x1Pie">
+				<intent-filter>
+					<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+					<action android:name="GsWidgetProvider1x1Pie_UPDATE" />
+     			</intent-filter>
+     			<meta-data 
+     				android:name="android.appwidget.provider"
+					android:resource="@xml/widget_1x1_pie_provider" />
+		</receiver>
+		
+		<receiver
+			android:label="Minutes Checker 1x1 Old Style PieChart" 
+			android:icon="@drawable/ic_launcher" 
+			android:name="com.goodstart.minutescheckerlib.GsWidgetProvider1x1OldStylePie">
+				<intent-filter>
+					<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+					<action android:name="GsWidgetProvider1x1OldStylePie_UPDATE" />
+     			</intent-filter>
+     			<meta-data 
+     				android:name="android.appwidget.provider"
+					android:resource="@xml/widget_1x1_pie_provider" />
+		</receiver>
+		
+        <service
+		    android:enabled="true"
+    		android:name="com.goodstart.minutescheckerlib.GsServiceToRefreshAccountAfterPhoneEvent">
+		    <intent-filter>
+		        <action android:name = "com.goodstart.MinutesCheckerServiceToRefreshAccountAfterPhoneEvent" />
+		    </intent-filter>
+		</service>
+		
+		<service
+		    android:enabled="true"
+    		android:name="com.goodstart.minutescheckerlib.GsServiceToRefreshAccountForWidgets">
+		    <intent-filter>
+		        <action android:name = "com.goodstart.MinutesCheckerServiceToRefreshAccountForWidgets" />
+		    </intent-filter>
+		</service>
+		
+    </application>
+
+</manifest>

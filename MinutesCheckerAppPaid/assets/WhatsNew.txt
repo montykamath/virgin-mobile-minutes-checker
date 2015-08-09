@@ -1,0 +1,5 @@
+v28
+- Fixed to work with new version of Virgin Mobile website
+
+Thanks for buying the app!
+Monty Kamath

@@ -1,0 +1,37 @@
+v11
+- Works with most recent virgin mobile website (as of April 28, 2013)
+- Show popup message before and after making calls to tell you how many minutes you have used this month
+- Better error handling
+
+v10
+- Optimizations
+
+v9
+- Bug fix (iphone $5 discount)
+
+v8
+- Bug fixes
+
+v7
+- Bug fixes
+
+v6
+- Move to SD
+- Auto check new account right after adding it
+
+v5
+- Added support for multiple accounts
+- Faster minutes checking
+
+v4
+- Fix for date format
+
+v3
+- Even faster minutes checking
+
+v2
+- Faster minutes checking
+
+v1
+- New icon
+- Better error handling

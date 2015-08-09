@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/contextMenuRefreshAccount" 
+        android:title="@string/refreshAccount" />
+	<item 
+        android:id="@+id/contextMenuItemEditAccount" 
+        android:title="@string/editAccount" />
+	<item 
+        android:id="@+id/contextMenuItemDeleteAccount" 
+        android:title="@string/deleteAccount" />
+    <item 
+        android:id="@+id/contextMenuMoveUp" 
+        android:title="@string/moveUp" />
+    <item 
+        android:id="@+id/contextMenuMoveDown" 
+        android:title="@string/moveDown" />
+
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10sp" >
+ 
+    <EditText
+        android:id="@+id/dialogPhoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phoneNumber"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:inputType="number" >
+         <requestFocus />
+    </EditText>
+ 
+    <EditText
+        android:id="@+id/dialogPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pin"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:inputType="number" >
+    </EditText>
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+ 
+        <Button
+            android:gravity="center_horizontal"
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/OK" />
+ 
+    </LinearLayout>
+ 
+</LinearLayout>

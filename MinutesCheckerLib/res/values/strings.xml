@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Minutes Checker Virgin Mobile</string>
+    
+    <string name="app_version_free_or_paid">library</string>
+    <string name="app_market_url">market://details?id=com.goodstart.minutescheckerfree</string>
+
+    <string name="addAccount">Add Account</string>
+    <string name="refresh">Refresh</string>
+    <string name="settings">Settings</string>
+    <string name="rateThisApp">Rate This App</string>
+    <string name="about">About</string>
+    
+    <string name="deleteAccount">Delete Account</string>
+    <string name="editAccount">Edit Account</string>
+    <string name="refreshAccount">Refresh Account</string>
+    <string name="moveUp">Move Up</string>
+    <string name="moveDown">Move Down</string>
+	<string name="refreshAll">Refresh All</string>
+	
+	<string name="phoneNumber">Phone Number</string>
+	<string name="pin">PIN</string>
+	<string name="OK">OK</string>
+		
+	<string name="currentBalance">Current Balance</string>
+	<string name="newMonthStarts">New Month Starts</string>
+	<string name="chargeAmount">Charge Amount</string>
+	<string name="minutesUsed">Minutes Used</string>
+	<string name="dataUsed">Data Used</string>
+	<string name="lastUpdate">Last Update</string>
+	
+	<string name="minUsed">Min Used</string>
+	<string name="balance">Balance</string>
+	
+	<string name="callNotifications">Call Notifications</string>
+	<string name="popupBeforeCallTitle">Popup before call</string>
+	<string name="popupBeforeCallSummary">Show a small popup before call with your used minutes</string>
+	<string name="popupAfterCallTitle">Popup after call</string>
+	<string name="popupAfterCallSummary">Show a small popup after call with your used minutes:</string>
+	
+	<string name="autoRefreshOnOpenTitle">Refresh on open</string>
+	<string name="autoRefreshOnOpenSummary">Refresh all accounts when the app opens</string>
+
+</resources>

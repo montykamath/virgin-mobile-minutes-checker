@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Minutes Checker Pro</string>
+    <string name="app_version_free_or_paid">paid</string>
+    <string name="app_market_url">market://details?id=com.goodstart.minuteschecker</string>
+
+</resources>

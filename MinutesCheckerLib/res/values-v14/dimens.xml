@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="widget_inside_margin">2dp</dimen>
+    <dimen name="widget_margin">4dp</dimen>
+    <dimen name="widget_width">40dp</dimen>
+    <dimen name="widget2x1_width">100dp</dimen>
+    <dimen name="widget_height">40dp</dimen>
+    
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+		android:title="@string/callNotifications"
+		android:key="callNotifications">
+		<CheckBoxPreference
+			android:key="popupBeforeCall"
+			android:title="@string/popupBeforeCallTitle"
+			android:summary="@string/popupBeforeCallSummary"
+			android:defaultValue="true"
+			/>
+    
+		<CheckBoxPreference
+			android:key="popupAfterCall"
+			android:title="@string/popupAfterCallTitle"
+			android:summary="@string/popupAfterCallSummary"
+			android:defaultValue="true"
+			/>
+			
+		<CheckBoxPreference
+			android:key="autoRefreshOnOpen"
+			android:title="@string/autoRefreshOnOpenTitle"
+			android:summary="@string/autoRefreshOnOpenSummary"
+			android:defaultValue="true"
+			/>
+	        
+	</PreferenceCategory>
+
+</PreferenceScreen>
