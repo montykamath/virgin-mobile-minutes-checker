@@ -199,7 +199,7 @@ public class GsAccountList implements Iterable<GsAccount>
 		ArrayList<GsAccount> readAccounts = new ArrayList<GsAccount>();
 		
 		SharedPreferences settings = context.getSharedPreferences(ACCOUNTS_FILE, 0);
-		int fileVersion = settings.getInt("fileVersion", 0);
+		//int fileVersion = settings.getInt("fileVersion", 0);
 	    int numberOfAccounts = settings.getInt("numberOfAccounts", 0);
 	    for(int i=0; i < numberOfAccounts; i++)
 	    {
@@ -216,7 +216,7 @@ public class GsAccountList implements Iterable<GsAccount>
 		ArrayList<GsAccount> readAccounts = new ArrayList<GsAccount>();
 		
 		SharedPreferences settings = context.getSharedPreferences(ACCOUNTS_FILE, 0);
-		int fileVersion = settings.getInt("fileVersion", 0);
+		//int fileVersion = settings.getInt("fileVersion", 0);
 	    int numberOfAccounts = settings.getInt("numberOfAccounts", 0);
 	    for(int i=0; i < numberOfAccounts; i++)
 	    {

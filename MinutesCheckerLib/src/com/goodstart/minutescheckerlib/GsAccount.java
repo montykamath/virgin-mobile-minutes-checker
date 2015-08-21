@@ -2,7 +2,6 @@ package com.goodstart.minutescheckerlib;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -12,9 +11,10 @@ import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.annotation.SuppressLint;
 import android.util.Base64;
-import android.util.Log;
 
+@SuppressLint("SimpleDateFormat")
 public class GsAccount
 {
 	public static final String ACCOUNTS_DB_FILE = "Accounts.db";
@@ -255,7 +255,7 @@ public class GsAccount
 	    {
 	    	try
 	    	{
-	    		DateFormat df = SimpleDateFormat.getDateInstance();
+	    		//DateFormat df = SimpleDateFormat.getDateInstance();
 	            
 		    	// End of the month
 		    	Calendar endCal = new GregorianCalendar(
@@ -265,7 +265,7 @@ public class GsAccount
 		    		 23,
 		    		 59);
 		    	long end = endCal.getTimeInMillis();
-		    	String endString = df.format(endCal.getTime());
+		    	//String endString = df.format(endCal.getTime());
 		    	
 		    	// Start of the month
 		    	Calendar startCal = (Calendar) endCal.clone();
@@ -273,12 +273,12 @@ public class GsAccount
 		    	startCal.set(Calendar.HOUR_OF_DAY, 0);
 		    	startCal.set(Calendar.MINUTE, 0);
 		    	long start = startCal.getTimeInMillis();
-		    	String startString = df.format(startCal.getTime());
+		    	//String startString = df.format(startCal.getTime());
 		    	
 		    	// Now (in the middle of the month)
 		    	Calendar nowCal = new GregorianCalendar();
 			    long now = nowCal.getTimeInMillis();
-		    	String nowString = df.format(nowCal.getTime());
+		    	//String nowString = df.format(nowCal.getTime());
 		    	
 			    long nowFromStart = now - start;
 			    long endFromStart = end - start;
